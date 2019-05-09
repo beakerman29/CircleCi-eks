@@ -28,7 +28,7 @@ workflows:
           requires:
             - aws-eks/create-cluster
       - aws-eks/install-helm-on-cluster:
-          cluster-name: my-eks--demo
+          cluster-name: my-eks-demo
           enable-cluster-wide-admin-access: true
           requires:
             - aws-eks/create-cluster
